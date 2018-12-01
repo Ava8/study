@@ -4,8 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class TestGame {
     public static void main(String[] args) throws IOException {
+        System.out.println("enter cards:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Player player1 = new Player(reader.readLine()), player2 = new Player(reader.readLine());
         int count = 0;

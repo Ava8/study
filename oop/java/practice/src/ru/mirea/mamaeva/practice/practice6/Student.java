@@ -15,7 +15,7 @@ public class Student {
             System.out.println(students.get(i));
         }
 
-        System.out.println("===============================\nSorted:");
+        System.out.println("-------------------------------\nSorted:");
         students.sort(Comparator.comparingInt(s -> s.score));
         for (Student s : students) {
             System.out.println(s);

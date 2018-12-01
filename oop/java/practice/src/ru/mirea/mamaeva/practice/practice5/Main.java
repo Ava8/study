@@ -1,8 +1,10 @@
 package ru.mirea.mamaeva.practice.practice5;
 
+// task2
+
 public class Main {
     public static void main(String[] args) {
-        printToN(10);
+        printToN(12);
     }
 
     public static void printToN(int n) {

@@ -1,9 +1,9 @@
-package ru.mirea.mameva.practice.practice4;
+package ru.mirea.mamaeva.practice.practice4;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class GuiExample extends JFrame {
+public class GuiExmpl extends JFrame {
     int milanScore = 0, madridScore = 0;
     String milanName = "AC Milan", madridName = "Real Madrid";
     JLabel resultLabel = new JLabel("Result: 0 X 0"),
@@ -13,11 +13,11 @@ public class GuiExample extends JFrame {
             madridButton = new Button(madridName);
 
     public static void main(String[] args) {
-        new GuiExample();
+        new GuiExmpl();
     }
 
-    public GuiExample() {
-        super("Gui Example");
+    public GuiExmpl() {
+        super("test example");
         setSize(500, 200);
         setLayout(new GridLayout(3, 2));
         setResizable(false);
