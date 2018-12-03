@@ -1,7 +1,5 @@
 package mirea.mamaeva.lab3.Model;
 
-
-
 public class Sofa extends Furniture {
 
     public enum SofaType {

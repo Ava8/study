@@ -1,6 +1,5 @@
 package mirea.mamaeva.lab3;
 
-import mirea.mamaeva.lab3.Model.Furniture;
 import mirea.mamaeva.lab3.Model.Sofa;
 import mirea.mamaeva.lab3.Model.Table;
 

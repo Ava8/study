@@ -28,12 +28,13 @@ public class Controller {
                                                                                 "Courier New");
         colorBox.setItems(color);
         fontBox.setItems(font);
+        colorBox.setValue("black");
+        fontBox.setValue("MS Sans Serif");
 
         doneEdit.setOnAction(event -> {
-            String choosenColor = colorBox.getValue();
-            textArea.setStyle("-fx-text-fill: "+choosenColor+";");
-            String choosenFont = fontBox.getValue();
-            textArea.setStyle("-fx-font-family: "+choosenFont+";");
+            String chosenColor = colorBox.getValue();
+            String chosenFont = fontBox.getValue();
+            textArea.setStyle("-fx-text-fill: "+chosenColor+";"+"-fx-font-family: "+chosenFont+";");
         });
         
     }
