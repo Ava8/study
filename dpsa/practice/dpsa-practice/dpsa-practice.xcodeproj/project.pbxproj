@@ -10,7 +10,8 @@
 		D067EB5922329E710086F8F3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067EB5522329E710086F8F3 /* BinarySearch.swift */; };
 		D067EB5A22329E710086F8F3 /* BarrierSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067EB5622329E710086F8F3 /* BarrierSearch.swift */; };
 		D067EB5B22329E710086F8F3 /* BruteForceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067EB5722329E710086F8F3 /* BruteForceSearch.swift */; };
-		D067EB5C22329E710086F8F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067EB5822329E710086F8F3 /* main.swift */; };
+		D06C2F79224CD05000BF5037 /* StringMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C2F78224CD05000BF5037 /* StringMatch.swift */; };
+		D06C2F7B224CD2D400BF5037 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C2F7A224CD2D400BF5037 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		D067EB5622329E710086F8F3 /* BarrierSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarrierSearch.swift; sourceTree = "<group>"; };
 		D067EB5722329E710086F8F3 /* BruteForceSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BruteForceSearch.swift; sourceTree = "<group>"; };
 		D067EB5822329E710086F8F3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D06C2F78224CD05000BF5037 /* StringMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMatch.swift; sourceTree = "<group>"; };
+		D06C2F7A224CD2D400BF5037 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D067EB5422329E3C0086F8F3 /* practice1 */,
+				D06C2F77224CCF0F00BF5037 /* practice2 */,
 			);
 			path = "dpsa-practice";
 			sourceTree = "<group>";
@@ -77,6 +81,15 @@
 				D067EB5822329E710086F8F3 /* main.swift */,
 			);
 			path = practice1;
+			sourceTree = "<group>";
+		};
+		D06C2F77224CCF0F00BF5037 /* practice2 */ = {
+			isa = PBXGroup;
+			children = (
+				D06C2F78224CD05000BF5037 /* StringMatch.swift */,
+				D06C2F7A224CD2D400BF5037 /* main.swift */,
+			);
+			path = practice2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +152,8 @@
 			files = (
 				D067EB5922329E710086F8F3 /* BinarySearch.swift in Sources */,
 				D067EB5A22329E710086F8F3 /* BarrierSearch.swift in Sources */,
-				D067EB5C22329E710086F8F3 /* main.swift in Sources */,
+				D06C2F7B224CD2D400BF5037 /* main.swift in Sources */,
+				D06C2F79224CD05000BF5037 /* StringMatch.swift in Sources */,
 				D067EB5B22329E710086F8F3 /* BruteForceSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

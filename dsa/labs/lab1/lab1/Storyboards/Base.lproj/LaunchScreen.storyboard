@@ -24,19 +24,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ようこそ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8a-SP-wyc">
-                                <rect key="frame" x="74" y="291" width="251" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.16837007705479451" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F8a-SP-wyc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="9PA-lR-wD8"/>
                             <constraint firstItem="uRo-kh-5rK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10.5" id="HC3-p5-ekc"/>
-                            <constraint firstItem="F8a-SP-wyc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YXl-lP-s7w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F8a-SP-wyc" secondAttribute="trailing" constant="50" id="qKm-ms-5Cc"/>
                             <constraint firstItem="uRo-kh-5rK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qVz-Lm-ozq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

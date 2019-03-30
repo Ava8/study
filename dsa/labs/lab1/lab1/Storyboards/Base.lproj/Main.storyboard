@@ -10,6 +10,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="u6q-8G-xKb">
+            <objects>
+                <viewController id="2i8-zE-39L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHV-LV-XCE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-OQ-ED3">
+                                <rect key="frame" x="75" y="315.5" width="225" height="36"/>
+                                <color key="backgroundColor" red="0.93081098790000005" green="0.419685323" blue="0.40235542949999997" alpha="0.60811750856164382" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="慊つｷﾂ。">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33330124616622925" green="0.33335387706756592" blue="0.33328968286514282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U2p-OQ-ED3" firstAttribute="centerY" secondItem="PHV-LV-XCE" secondAttribute="centerY" id="Jnd-RC-0gF"/>
+                            <constraint firstItem="U2p-OQ-ED3" firstAttribute="centerX" secondItem="PHV-LV-XCE" secondAttribute="centerX" id="aa2-YV-TSk"/>
+                            <constraint firstItem="U2p-OQ-ED3" firstAttribute="width" secondItem="PHV-LV-XCE" secondAttribute="width" multiplier="0.6" id="rPF-NU-CvM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dhl-Ph-cTA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6c-Ml-77G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="115.59220389805098"/>
+        </scene>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -100,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="662" y="117"/>
         </scene>
     </scenes>
 </document>
