@@ -11,7 +11,9 @@ import Foundation
 // MARK: Brute Force match string extension
 
 extension String {
-    mutating func  matchWithBF( forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, atIndex : Int) {
+    mutating func  matchWithBF( forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, atIndex : Int, comparsionCount: Int) {
+        
+        var comparsionCount = 0
         
         pattern = pattern.trimmingCharacters(in: .whitespaces)
         
@@ -25,15 +27,16 @@ extension String {
             var j = i
             var matched = true
             for p in pattern.indices {
+                comparsionCount += 1
                 guard j != endIndex && self[j] == pattern[p] else { matched = false; break }
                 j = index(after: j)
             }
             
             if matched {
-                return (true, i.encodedOffset)
+                return (true, i.encodedOffset, comparsionCount)
             }
         }
-        return (false, -1)
+        return (false, -1, comparsionCount)
     }
 }
 
@@ -88,7 +91,9 @@ extension String {
         return table
     }
     
-    mutating func matchWithKMP(forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, fromIndex : Int, toIndex : Int) {
+    mutating func matchWithKMP(forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, fromIndex : Int, toIndex : Int, comparsionCount: Int) {
+        
+        var comparsionCount = 0
         
         pattern = pattern.trimmingCharacters(in: .whitespaces)
         
@@ -104,6 +109,7 @@ extension String {
         var i = 0, j=0
         var tchar: Character
         while (i + j < textLength) {
+            comparsionCount += 1
             tchar = self[self.index(self.startIndex, offsetBy: i+j)] // char from text at i + j index
             
             // while the char at index i + j of the text is equal to the char at index j of pattern
@@ -113,7 +119,7 @@ extension String {
                 if (j>=patternLength) {
                     // First ocurrence of pattern found at index i of text
                     toIndex = i + (patternLength - 1)
-                    return (true, i, toIndex)
+                    return (true, i, toIndex, comparsionCount)
                 }
                 // pattern not found completely, then update char of text to the next char
                 if textLength > i+j {
@@ -131,7 +137,7 @@ extension String {
             }
         }
         
-        return (false, -1, toIndex) // pattern not found.
+        return (false, -1, toIndex, comparsionCount) // pattern not found.
     }
     
 }
@@ -139,7 +145,9 @@ extension String {
 // MARK: Boyer Moore match string extension
 
 extension String {
-    mutating func matchWithBM(forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, atIndex : Int) {
+    mutating func matchWithBM(forPattern pattern : inout String, caseInsensitive: Bool) ->(matched : Bool, atIndex : Int, comparsionCount: Int) {
+        
+        var comparsionCount = 0
         
         pattern = pattern.trimmingCharacters(in: .whitespaces)
         
@@ -149,7 +157,7 @@ extension String {
         }
         
         let patternLength = pattern.count
-        guard patternLength > 0, patternLength <= self.count else { return (false, -1) }
+        guard patternLength > 0, patternLength <= self.count else { return (false, -1, comparsionCount) }
         
         var skipTable = [Character: Int]()
         for (index, char) in pattern.enumerated() {
@@ -175,10 +183,11 @@ extension String {
         }
         
         while currentIndex < self.endIndex {
+            comparsionCount += 1
             let currentChar = self[currentIndex]
             
             if currentChar == lastPatternChar {
-                if let matchIndex = backwardCheck() { return (true, matchIndex.encodedOffset) }
+                if let matchIndex = backwardCheck() { return (true, matchIndex.encodedOffset, comparsionCount) }
                 
                 currentIndex = self.index(after: currentIndex)
             } else {
@@ -186,7 +195,7 @@ extension String {
             }
         }
         
-        return (false, -1)
+        return (false, -1, comparsionCount)
     }
 }
 

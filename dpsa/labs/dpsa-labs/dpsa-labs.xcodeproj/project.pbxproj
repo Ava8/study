@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D067EB7222329EEA0086F8F3 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D067EB7122329EEA0086F8F3 /* LinkList.cpp */; };
+		D091510D2270F25C00CED3DB /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D091510C2270F25C00CED3DB /* LinkList.cpp */; };
+		D091510F2270F26600CED3DB /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D091510E2270F26600CED3DB /* BinaryTree.cpp */; };
+		D09151162270F26D00CED3DB /* BinaryHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09151112270F26D00CED3DB /* BinaryHeap.cpp */; };
+		D09151172270F26D00CED3DB /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09151122270F26D00CED3DB /* Graph.cpp */; };
+		D09151182270F26D00CED3DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09151152270F26D00CED3DB /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,14 @@
 
 /* Begin PBXFileReference section */
 		D067EB6622329EB60086F8F3 /* dpsa-labs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dpsa-labs"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D067EB7122329EEA0086F8F3 /* LinkList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
+		D091510C2270F25C00CED3DB /* LinkList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
+		D091510E2270F26600CED3DB /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		D09151102270F26D00CED3DB /* mst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mst.h; sourceTree = "<group>"; };
+		D09151112270F26D00CED3DB /* BinaryHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryHeap.cpp; sourceTree = "<group>"; };
+		D09151122270F26D00CED3DB /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		D09151132270F26D00CED3DB /* BinaryHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryHeap.h; sourceTree = "<group>"; };
+		D09151142270F26D00CED3DB /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		D09151152270F26D00CED3DB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				D067EB7022329EC10086F8F3 /* lab1 */,
+				D091510A2270F20A00CED3DB /* lab 2 */,
+				D091510B2270F21A00CED3DB /* lab 3 */,
 			);
 			path = "dpsa-labs";
 			sourceTree = "<group>";
@@ -65,9 +78,30 @@
 		D067EB7022329EC10086F8F3 /* lab1 */ = {
 			isa = PBXGroup;
 			children = (
-				D067EB7122329EEA0086F8F3 /* LinkList.cpp */,
+				D091510C2270F25C00CED3DB /* LinkList.cpp */,
 			);
 			path = lab1;
+			sourceTree = "<group>";
+		};
+		D091510A2270F20A00CED3DB /* lab 2 */ = {
+			isa = PBXGroup;
+			children = (
+				D091510E2270F26600CED3DB /* BinaryTree.cpp */,
+			);
+			path = "lab 2";
+			sourceTree = "<group>";
+		};
+		D091510B2270F21A00CED3DB /* lab 3 */ = {
+			isa = PBXGroup;
+			children = (
+				D09151112270F26D00CED3DB /* BinaryHeap.cpp */,
+				D09151132270F26D00CED3DB /* BinaryHeap.h */,
+				D09151122270F26D00CED3DB /* Graph.cpp */,
+				D09151142270F26D00CED3DB /* Graph.h */,
+				D09151152270F26D00CED3DB /* main.cpp */,
+				D09151102270F26D00CED3DB /* mst.h */,
+			);
+			path = "lab 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D067EB7222329EEA0086F8F3 /* LinkList.cpp in Sources */,
+				D09151172270F26D00CED3DB /* Graph.cpp in Sources */,
+				D091510F2270F26600CED3DB /* BinaryTree.cpp in Sources */,
+				D091510D2270F25C00CED3DB /* LinkList.cpp in Sources */,
+				D09151182270F26D00CED3DB /* main.cpp in Sources */,
+				D09151162270F26D00CED3DB /* BinaryHeap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

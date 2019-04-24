@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6l6-cd-hfP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--lab 3-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wRs-dW-uab">
+                                <rect key="frame" x="103" y="181.5" width="169" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9h-sw-kGt">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
+                                        <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="DB view">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="4uH-XG-Bqw" kind="show" id="XWi-nk-4ar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmq-8G-vUE">
+                                        <rect key="frame" x="0.0" y="70" width="169" height="30"/>
+                                        <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="add new record">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="b5J-NB-qgc" kind="presentation" id="pMz-Tq-aet"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-z1-LA5">
+                                        <rect key="frame" x="0.0" y="140" width="169" height="30"/>
+                                        <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="change last FIO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeLastRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ld5-6E-xqr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEc-JG-m4P">
+                                        <rect key="frame" x="0.0" y="210" width="169" height="30"/>
+                                        <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="update DB">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="updateDB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7IK-Kb-jRI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26778632610000003" green="0.2408630974" blue="0.2173259837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRs-dW-uab" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="9vp-yh-a23"/>
+                            <constraint firstItem="wRs-dW-uab" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mci-qI-xzr"/>
+                            <constraint firstItem="wRs-dW-uab" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oBE-he-Dur"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="lab 3" id="BkN-IX-v3X"/>
+                    <connections>
+                        <outlet property="updateDB" destination="qEc-JG-m4P" id="oa0-f9-iqc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Add New RecordVC-->
+        <scene sceneID="5Wx-Kd-uCr">
+            <objects>
+                <viewController id="b5J-NB-qgc" customClass="AddNewRecordVC" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHf-fs-ho9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ap-MJ-0LI">
+                                <rect key="frame" x="19" y="34.5" width="337.5" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter fio of the new student..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVR-ZO-Dok">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayo-cC-ViO">
+                                        <rect key="frame" x="0.0" y="38" width="337.5" height="30"/>
+                                        <color key="textColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ayo-cC-ViO" firstAttribute="width" secondItem="9ap-MJ-0LI" secondAttribute="width" id="QsU-P9-FUf"/>
+                                    <constraint firstItem="LVR-ZO-Dok" firstAttribute="width" secondItem="9ap-MJ-0LI" secondAttribute="width" id="sdN-nk-hod"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el7-nP-ksy">
+                                <rect key="frame" x="19" y="142.5" width="337.5" height="30"/>
+                                <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="add new record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNewRecord:" destination="b5J-NB-qgc" eventType="touchUpInside" id="T1Z-fe-dHA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26778632610000003" green="0.2408630974" blue="0.2173259837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="el7-nP-ksy" firstAttribute="top" secondItem="9ap-MJ-0LI" secondAttribute="bottom" constant="40" id="1iz-x1-pVE"/>
+                            <constraint firstItem="9ap-MJ-0LI" firstAttribute="width" secondItem="lHf-fs-ho9" secondAttribute="width" multiplier="0.9" id="2u5-29-60k"/>
+                            <constraint firstItem="el7-nP-ksy" firstAttribute="width" secondItem="lHf-fs-ho9" secondAttribute="width" multiplier="0.9" id="7J8-mg-67c"/>
+                            <constraint firstItem="9ap-MJ-0LI" firstAttribute="centerX" secondItem="f5f-zm-QeZ" secondAttribute="centerX" id="JL8-b1-BNK"/>
+                            <constraint firstItem="el7-nP-ksy" firstAttribute="centerX" secondItem="f5f-zm-QeZ" secondAttribute="centerX" id="Uug-Is-8AU"/>
+                            <constraint firstItem="9ap-MJ-0LI" firstAttribute="centerY" secondItem="f5f-zm-QeZ" secondAttribute="centerY" multiplier="0.2" id="iHq-rA-eEL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f5f-zm-QeZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="newStudent" destination="ayo-cC-ViO" id="7n1-Pd-ASI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEF-7W-rCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887.2" y="687.7061469265368"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="jX8-Qt-vl1">
+            <objects>
+                <tableViewController id="4uH-XG-Bqw" customClass="TableViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="frG-Yg-4t2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.26778632610000003" green="0.2408630974" blue="0.2173259837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" id="Ylq-Zh-6l4">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ylq-Zh-6l4" id="Scz-YM-9ak">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.26590713859999998" green="0.2392159402" blue="0.21397593619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.26778632610000003" green="0.2408630974" blue="0.2173259837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4uH-XG-Bqw" id="j09-li-fXA"/>
+                            <outlet property="delegate" destination="4uH-XG-Bqw" id="IHd-yK-RL2"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ret-Jt-DNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887.2" y="-129.08545727136433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m7U-5Z-MY0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6l6-cd-hfP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="q8U-cv-GGE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.26590713858604431" green="0.23921594023704529" blue="0.2139759361743927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wI0-Qm-AbJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFB-HS-j7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="134"/>
+        </scene>
+    </scenes>
+</document>

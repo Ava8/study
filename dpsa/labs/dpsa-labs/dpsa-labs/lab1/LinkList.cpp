@@ -127,27 +127,27 @@ public:
     }
 };
 
-int main()
-{
-    LinkedList list{};
-    for (int i = 0; i < 5; i++)
-    {
-        ListObject obj = ListObject{};
-        // 5, 5, 4, 4, 3, 3, 2, 2, 1, 1
-        obj.code = 5 - i;
-        obj.name = "object #" + std::to_string(obj.code);
-        list.add(obj);
-        list.add(obj);
-    }
-    ListObject obj = ListObject{};
-    obj.code = 7;
-    obj.name = "object #7";
-    list.add(obj);
-    obj.code = 6;
-    obj.name = "object #6";
-    list.add(obj);
-    
-    std::cout << list << std::endl;
-    
-    return 0;
-}
+//int main()
+//{
+//    LinkedList list{};
+//    for (int i = 0; i < 5; i++)
+//    {
+//        ListObject obj = ListObject{};
+//        // 5, 5, 4, 4, 3, 3, 2, 2, 1, 1
+//        obj.code = 5 - i;
+//        obj.name = "object #" + std::to_string(obj.code);
+//        list.add(obj);
+//        list.add(obj);
+//    }
+//    ListObject obj = ListObject{};
+//    obj.code = 7;
+//    obj.name = "object #7";
+//    list.add(obj);
+//    obj.code = 6;
+//    obj.name = "object #6";
+//    list.add(obj);
+//    
+//    std::cout << list << std::endl;
+//    
+//    return 0;
+//}
