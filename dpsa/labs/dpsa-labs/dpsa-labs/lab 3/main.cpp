@@ -10,6 +10,19 @@ void debug(int n, vector<int> pred) {
     cout << "--------" << endl;
 }
 
+/*
+ 
+                     5  -(6)- 6
+                    / \      /(11)
+                  (7) (10)- 7
+                  /
+ 0 -(2)- 1 -(3)- 2 -(3)- 4
+                  \
+                  (2)
+                    \
+                     3
+ 
+ */
 
 int main() {
     const int n = 8;
