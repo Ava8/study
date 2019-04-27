@@ -95,9 +95,9 @@ class ManagerDB {
                         let fio = oldObject!["fio"] as! String
                         let splitFIO = fio.components(separatedBy: [" "])
                         
-                        let surname = splitFIO[0] as String? ?? ""
-                        let name = splitFIO[1] as String? ?? ""
-                        let lastname = splitFIO[2] as String? ?? ""
+                        let surname = splitFIO[0] as String
+                        let name = splitFIO[1] as String
+                        let lastname = splitFIO[2] as String
                         
                         newObject!["surname"] = surname
                         newObject!["name"] = name

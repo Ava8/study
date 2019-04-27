@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let fios = ["Mamaeva Arina Borisovna","Nikiforova Maria Andreevna", "Ignatenko Artem Yakovlevich", "Medvedev Vadim Artemovich", "Vinter Ruslan Romanovich", "Lavrentyava Irina Andreevna", "Pavlov Pavel Alexsandrovich", "Medyanik Alexandr Olegovich", "Kuznetsov Michail Vadimovich"]
         ManagerDB.clear()
         for _ in 0 ..< 5 {
-            if ManagerDB.getSchemaVersion() == 0 {
+            if ManagerDB.getSchemaVersion() < 1 {
                 ManagerDB.saveStudent(Student(fio: fios.randomElement()!))
             } else {
                 let student = fios.randomElement()?.components(separatedBy: " ")

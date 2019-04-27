@@ -48,7 +48,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="b5J-NB-qgc" kind="presentation" id="pMz-Tq-aet"/>
+                                            <segue destination="b5J-NB-qgc" kind="show" id="EbR-0R-Afh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-z1-LA5">
@@ -106,11 +106,11 @@
             <objects>
                 <viewController id="b5J-NB-qgc" customClass="AddNewRecordVC" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lHf-fs-ho9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ap-MJ-0LI">
-                                <rect key="frame" x="19" y="34.5" width="337.5" height="68"/>
+                                <rect key="frame" x="19" y="26.5" width="337.5" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter fio of the new student..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVR-ZO-Dok">
                                         <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
@@ -131,7 +131,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el7-nP-ksy">
-                                <rect key="frame" x="19" y="142.5" width="337.5" height="30"/>
+                                <rect key="frame" x="19" y="134.5" width="337.5" height="30"/>
                                 <color key="backgroundColor" red="0.50728628139999998" green="0.29326912040000003" blue="0.612726047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="add new record">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,19 +145,29 @@
                                     <action selector="addNewRecord:" destination="b5J-NB-qgc" eventType="touchUpInside" id="T1Z-fe-dHA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRg-C0-WnX">
+                                <rect key="frame" x="157.5" y="209.5" width="60" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.3411764706" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26778632610000003" green="0.2408630974" blue="0.2173259837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="el7-nP-ksy" firstAttribute="top" secondItem="9ap-MJ-0LI" secondAttribute="bottom" constant="40" id="1iz-x1-pVE"/>
                             <constraint firstItem="9ap-MJ-0LI" firstAttribute="width" secondItem="lHf-fs-ho9" secondAttribute="width" multiplier="0.9" id="2u5-29-60k"/>
                             <constraint firstItem="el7-nP-ksy" firstAttribute="width" secondItem="lHf-fs-ho9" secondAttribute="width" multiplier="0.9" id="7J8-mg-67c"/>
+                            <constraint firstItem="uRg-C0-WnX" firstAttribute="top" secondItem="el7-nP-ksy" secondAttribute="bottom" constant="45" id="AhF-wp-Qqt"/>
                             <constraint firstItem="9ap-MJ-0LI" firstAttribute="centerX" secondItem="f5f-zm-QeZ" secondAttribute="centerX" id="JL8-b1-BNK"/>
                             <constraint firstItem="el7-nP-ksy" firstAttribute="centerX" secondItem="f5f-zm-QeZ" secondAttribute="centerX" id="Uug-Is-8AU"/>
                             <constraint firstItem="9ap-MJ-0LI" firstAttribute="centerY" secondItem="f5f-zm-QeZ" secondAttribute="centerY" multiplier="0.2" id="iHq-rA-eEL"/>
+                            <constraint firstItem="uRg-C0-WnX" firstAttribute="centerX" secondItem="lHf-fs-ho9" secondAttribute="centerX" id="owi-JG-Sga"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f5f-zm-QeZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="guz-Kf-Tfe"/>
                     <connections>
+                        <outlet property="errorLbl" destination="uRg-C0-WnX" id="Nd8-ku-1aQ"/>
                         <outlet property="newStudent" destination="ayo-cC-ViO" id="7n1-Pd-ASI"/>
                     </connections>
                 </viewController>

@@ -39,7 +39,7 @@ class TableViewController: UITableViewController {
         cell.textLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         cell.textLabel?.textAlignment = .center
         
-        if ManagerDB.getSchemaVersion() == 0 {
+        if ManagerDB.getSchemaVersion() < 1 {
             cell.textLabel?.text = student.fio
         } else {
             cell.textLabel?.text = "\(student.surname) \(student.name) \(student.lastname)"
