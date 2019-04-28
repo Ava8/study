@@ -63,7 +63,7 @@ class ManagerDB {
             let realm = try Realm()
             let students = realm.objects(Student.self)
             
-            if realm.configuration.schemaVersion == 0 {
+            if realm.configuration.schemaVersion < 1 {
                 if let lastStudent = students.last {
                     try realm.write {
                         lastStudent.fio = "Ivanov Ivan Ivanovich"
@@ -105,6 +105,7 @@ class ManagerDB {
                     }
                 }
         })
+        
     }
     
 }

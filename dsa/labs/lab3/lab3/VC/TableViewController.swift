@@ -21,6 +21,7 @@ class TableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         students = ManagerDB.loadStudents()
+        print("DEBUG: \(students![0].name)")
         self.tableView.reloadData()
     }
     

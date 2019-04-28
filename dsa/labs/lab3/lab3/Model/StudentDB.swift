@@ -29,8 +29,10 @@ class Student: Object {
         self.name = name
         self.lastname = lastname
     }
-    
+
     override static func primaryKey() -> String? {
         return "id"
     }
 }
+
+
