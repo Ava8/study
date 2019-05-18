@@ -22,10 +22,9 @@ class ViewController: UIViewController {
             if  now.day == date.day &&
                 now.month == date.month &&
                 now.hour == 9 &&
-                now.minute == 0 &&
-                now.second == 10 {
+                now.minute == 0 {
+                
                 UserDefaults.init(suiteName: "group.AksCompany.lab4")?.removeObject(forKey: "selectedDate")
-                dateInput.reloadInputViews()
             } else {
                 dateInput.setTitle(dateFormatter(date), for: .normal)
             }
@@ -60,7 +59,6 @@ class ViewController: UIViewController {
         components.minute = 0
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
-        print("TRIGGER: \(trigger.nextTriggerDate()!)")
         
         let request = UNNotificationRequest(identifier: "reminder", content: content, trigger: trigger)
         
